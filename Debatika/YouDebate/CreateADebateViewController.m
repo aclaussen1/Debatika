@@ -122,6 +122,8 @@
     
     NSArray *titleWords = [_titleTextField.text componentsSeparatedByString:@" "];
     NSArray *descriptionWords = [_descriptionTextView.text componentsSeparatedByString:@" "];
+    
+    //scenarios in which a user should not be allowed to submit debate
     if (_currentUser == nil) {
         NSLog(@"User is not logged in. Creating popup prompting for login");
         [self showGuestNeedsToLoginPopupWithStyle:CNPPopupStyleCentered];
