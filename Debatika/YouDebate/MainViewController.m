@@ -52,7 +52,7 @@
         // Update the UI on the main thread
         dispatch_async(dispatch_get_main_queue(), ^{
             
-            //because we only want this to happen once. it will be reset to false once the user logs back in.
+            //because we only want this to happen once. it will be reset to false once the user logs back in
             if (!internetIssueHasHappened) {
                 [self unwindToLoginDueToInternetIssues];
             };
