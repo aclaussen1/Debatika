@@ -25,6 +25,8 @@
 
 @property (nonatomic, strong) CNPPopupController *popupController;
 @property(nonatomic, strong) GADInterstitial *interstitial;
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
+
 
 @end
 
@@ -78,6 +80,13 @@
     numberOfTimesAppeared = 1;
     
     PFUser *currentUser = [PFUser currentUser];
+    //if current user is nil (is a guest), then the logout button will display different text, because a guest technically isn't logged in
+    if (currentUser == nil) {
+        NSLog(@"in this code snippet");
+        [self.logoutButton setTitle:@"Return to Login Screen" forState:UIControlStateNormal];
+        
+    }
+    
     [super viewDidLoad];
     self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-7163536193655330/9012535002"];
     

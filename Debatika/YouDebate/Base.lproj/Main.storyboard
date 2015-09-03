@@ -898,19 +898,6 @@
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfe-2y-VFh">
-                                <rect key="frame" x="266" y="470" width="69" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="C9J-PC-XCH"/>
-                                </constraints>
-                                <state key="normal" title="Logout">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="fYB-PO-1j6" kind="unwind" identifier="logoutUnwindSegue" unwindAction="unwindFromMainToLogin:" id="XtC-lM-2yv"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-Yv-RZW">
                                 <rect key="frame" x="279" y="216" width="42" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -935,6 +922,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfe-2y-VFh">
+                                <rect key="frame" x="163" y="470" width="274" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="C9J-PC-XCH"/>
+                                </constraints>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fYB-PO-1j6" kind="unwind" identifier="logoutUnwindSegue" unwindAction="unwindFromMainToLogin:" id="XtC-lM-2yv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -971,6 +971,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="gzU-nc-nhy"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="Dfe-2y-VFh" id="C5Q-bq-xSg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OlH-pb-zIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fYB-PO-1j6" userLabel="Exit" sceneMemberID="exit"/>
