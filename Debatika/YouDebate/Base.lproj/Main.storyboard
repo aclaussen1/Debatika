@@ -126,7 +126,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jwa-me-ibr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sns-aF-5sI">
-                        <rect key="frame" x="0.0" y="64" width="600" height="951"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="887"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEY-7Q-wXn">
@@ -632,7 +632,7 @@
             <objects>
                 <tableViewController id="brf-RR-30t" customClass="SearchDebatesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="peh-5A-iJe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="aBa-2C-oEe">
@@ -726,7 +726,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-515" y="-1216"/>
+            <point key="canvasLocation" x="-400" y="-1230"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rM2-R5-mgr">
@@ -827,7 +827,7 @@
         <scene sceneID="4nJ-3k-fnq">
             <objects>
                 <navigationController id="qK9-Vo-Kep" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cbt-3r-ZbI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Cbt-3r-ZbI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.11181893199682236" green="0.1118365004658699" blue="0.1118125319480896" alpha="1" colorSpace="calibratedRGB"/>
@@ -838,7 +838,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hp8-DT-cx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1209" y="-1267"/>
+            <point key="canvasLocation" x="-1308" y="-1203"/>
         </scene>
         <!--Main Menu-->
         <scene sceneID="phu-an-q82">
