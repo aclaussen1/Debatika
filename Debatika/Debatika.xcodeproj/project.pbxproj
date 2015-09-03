@@ -89,7 +89,6 @@
 		B1F245561B015BA900BF82A0 /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F245531B015BA900BF82A0 /* CSStickyHeaderFlowLayout.m */; };
 		B1F245571B015BA900BF82A0 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F245551B015BA900BF82A0 /* CSStickyHeaderFlowLayoutAttributes.m */; };
 		B1F246301B02909200BF82A0 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F2462F1B02909200BF82A0 /* ForgotPasswordViewController.m */; };
-		B1F246331B02F1FA00BF82A0 /* GlobalVars.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F246321B02F1FA00BF82A0 /* GlobalVars.m */; };
 		B1F2463A1B02FAE100BF82A0 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F246391B02FAE100BF82A0 /* SettingsViewController.m */; };
 		B1F2463E1B03247E00BF82A0 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F2463D1B03247E00BF82A0 /* settings.png */; };
 		B1F3E16F1B293993007C0666 /* MainProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F3E16E1B293993007C0666 /* MainProfileTableViewCell.m */; };
@@ -218,8 +217,6 @@
 		B1F245551B015BA900BF82A0 /* CSStickyHeaderFlowLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutAttributes.m; sourceTree = "<group>"; };
 		B1F2462E1B02907D00BF82A0 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		B1F2462F1B02909200BF82A0 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
-		B1F246311B02F1FA00BF82A0 /* GlobalVars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVars.h; sourceTree = "<group>"; };
-		B1F246321B02F1FA00BF82A0 /* GlobalVars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVars.m; sourceTree = "<group>"; };
 		B1F246381B02FAE100BF82A0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		B1F246391B02FAE100BF82A0 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		B1F2463D1B03247E00BF82A0 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
@@ -318,8 +315,6 @@
 		B14AA47F1AF918550029FC45 /* YouDebate */ = {
 			isa = PBXGroup;
 			children = (
-				B1F246321B02F1FA00BF82A0 /* GlobalVars.m */,
-				B1F246311B02F1FA00BF82A0 /* GlobalVars.h */,
 				B14AA4851AF918550029FC45 /* AppDelegate.m */,
 				B14AA4841AF918550029FC45 /* AppDelegate.h */,
 				B1F2463F1B03248700BF82A0 /* Images */,
@@ -689,7 +684,6 @@
 				B19FA4A41B387D7800002FD3 /* SimpleLeaveYouReplyHereTableViewCell.m in Sources */,
 				B110394A1B229F70000C83AA /* AlwaysOnTopSectionHeader.m in Sources */,
 				B1F3E16F1B293993007C0666 /* MainProfileTableViewCell.m in Sources */,
-				B1F246331B02F1FA00BF82A0 /* GlobalVars.m in Sources */,
 				B1C596341B1E12E900776A3B /* CSCell.m in Sources */,
 				B1C778241B4F08DD000C0728 /* InternetConnectivity.m in Sources */,
 				B1C683231AF95E9A0017C4AF /* RegisterViewController.m in Sources */,

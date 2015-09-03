@@ -48,31 +48,15 @@
     query = [PFUser query];
     userThatCreatedDebate = [query getObjectWithId:currentDebate[@"createdBy"] ];
     
+    /*
     UIBarButtonItem *backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(buttonTouchUpInside:)];
     
     self.navigationItem.leftBarButtonItem = backBarButtonItem;
+    */
     
     currentUser = [PFUser currentUser];
-    //the following commented out code uploads comments with the parent debate to parse
-    /*
-    // Create the comment
-    PFObject *myComment = [PFObject objectWithClassName:@"Responses"];
-    myComment[@"responseText"] = @"Let's do Sushirrito.";
     
-
     
-    // Add a relation between the Post and Comment
-    myComment[@"parent"] = objectID;
-    
-    // This will save both myPost and myComment
-    [myComment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (succeeded) {
-            NSLog(@"Upload of comment successful");
-        } else {
-            NSLog(@"Upload of comment not successful");
-        }
-    }];
-    */
     
     //load replies
     PFQuery *query2 = [PFQuery queryWithClassName:@"Responses"];
