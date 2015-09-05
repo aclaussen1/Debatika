@@ -89,6 +89,40 @@
     cell.title.text = [tableDataMutable objectAtIndex:indexPath.row][@"Title"];
     cell.descriptionSubtitle.text = [tableDataMutable objectAtIndex:indexPath.row][@"description"];
     
+    /* There is some magic going on here that I do not quite understand. I used some code from stackoverflow. http://stackoverflow.com/questions/26920632/how-to-asynchronously-load-uitableviewcell-images-so-that-scrolling-doesnt-lag
+        Without the dispatch_async, the featured debates was very laggy. I would get warnings saying that there was long running operation going on in the main thread. I think this had to do with the image of debate creators constantly coming from Parse. I need to read into this more so I'm not just a monkey who copies code. I should read about concurrency on iOS. But it whatever it is doing, it fixed the problem.
+     
+        The code that is commented out right below this is what existed before, that was causing the lagginess.
+     */
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        PFQuery * query = [PFUser query];
+        PFUser *userThatCreatedDebate = [query getObjectWithId:[tableDataMutable objectAtIndex:indexPath.row][@"createdBy"] ];
+        PFFile *file = [userThatCreatedDebate objectForKey:@"profilePicture"];
+        UIImage *image = [UIImage imageWithData:[file getData]];
+        // Use main thread to update the view. View changes are always handled through main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Refresh image view here
+            cell.profilePicture.image = image;
+            cell.profilePicture.layer.cornerRadius = cell.profilePicture.frame.size.width / 2 ;
+            cell.profilePicture.clipsToBounds = YES;
+            [cell setNeedsLayout];
+        });
+    });
+    
+    
+    /*
+    PFQuery * query = [PFUser query];
+    PFUser *userThatCreatedDebate = [query getObjectWithId:[tableDataMutable objectAtIndex:indexPath.row][@"createdBy"] ];
+    PFFile *file = [userThatCreatedDebate objectForKey:@"profilePicture"];
+    [file getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+        if (!error) {
+            UIImage *image = [UIImage imageWithData:data];
+            cell.profilePicture.image = image;
+            
+        }
+    }];
+     */
+    
     /*
     //first row for featuring
     if (indexPath.row == 0) {
@@ -119,7 +153,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
    
-    return 200;
+    return 350;
 }
 
 

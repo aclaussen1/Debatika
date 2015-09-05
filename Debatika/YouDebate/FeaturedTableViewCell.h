@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *title;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionSubtitle;
+@property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
 
 @end
