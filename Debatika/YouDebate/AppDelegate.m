@@ -61,6 +61,20 @@
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
     
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    PFUser *currentUser = [PFUser currentUser];
+    UIViewController *viewController;
+    if (!currentUser) {
+    viewController = [storyboard instantiateViewControllerWithIdentifier:@"loginViewController"];
+    } else {
+        viewController = [storyboard instantiateViewControllerWithIdentifier:@"MainMenu"];
+    }
+    
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

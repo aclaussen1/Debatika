@@ -181,16 +181,11 @@
 
 - (void)viewDidLoad {
     
+    
     self.permissions = @[@"public_profile"];
     _username.delegate = self;
     _password.delegate = self;
     //Current user. It would be bothersome if the user had to log in every time they open your app. You can avoid this by using the cached currentUser object.
-    PFUser *currentUser = [PFUser currentUser];
-    if (currentUser) {
-        [self performSegueWithIdentifier: @"toMainPage" sender:self];
-    } else {
-        
-    }
     
     //tests for an internet connection
     [self testInternetConnection];

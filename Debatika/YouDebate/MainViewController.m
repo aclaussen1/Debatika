@@ -26,6 +26,7 @@
 @property (nonatomic, strong) CNPPopupController *popupController;
 @property(nonatomic, strong) GADInterstitial *interstitial;
 @property (weak, nonatomic) IBOutlet UIButton *logoutButton;
+- (IBAction)logout:(id)sender;
 
 
 @end
@@ -64,6 +65,15 @@
     };
     
     [internetReachableFoo startNotifier];
+}
+
+- (IBAction)logout:(id)sender {
+    //the actually transition occurs in the storyboard, here it jsut logs out of Parse
+    PFUser *currentUser = [PFUser currentUser];
+    NSLog(@"current user: %@", currentUser.username);
+    [PFUser logOut];
+    NSLog(@"user logged out");
+
 }
 
 - (void) unwindToLoginDueToInternetIssues {
@@ -207,6 +217,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 
 
