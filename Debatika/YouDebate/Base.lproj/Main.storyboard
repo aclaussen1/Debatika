@@ -248,7 +248,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xjd-YJ-mT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6IA-ad-7Hq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-370" y="-2141"/>
+            <point key="canvasLocation" x="-379" y="-1949"/>
         </scene>
         <!--View Debate Table View Controller-->
         <scene sceneID="sCe-fw-mu0">
@@ -496,19 +496,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lgl-C6-8Cr">
-                                                <rect key="frame" x="216" y="8" width="169" height="169"/>
+                                                <rect key="frame" x="216" y="76" width="169" height="169"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="169" id="0Rh-D4-EI0"/>
                                                     <constraint firstAttribute="height" constant="169" id="KJi-nP-AHj"/>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NV3-b0-Pto">
-                                                <rect key="frame" x="8" y="214" width="584" height="30"/>
+                                                <rect key="frame" x="8" y="280" width="584" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOW-FD-R4q">
-                                                <rect key="frame" x="8" y="281" width="584" height="196"/>
+                                                <rect key="frame" x="8" y="347" width="584" height="196"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="196" id="9zg-V7-Hf7"/>
@@ -518,13 +518,13 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-7X-0BF">
-                                                <rect key="frame" x="8" y="252" width="88" height="21"/>
+                                                <rect key="frame" x="8" y="318" width="88" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ep-fW-Dyg">
-                                                <rect key="frame" x="205" y="485" width="191" height="57"/>
+                                                <rect key="frame" x="205" y="551" width="191" height="57"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="191" id="oA1-Yt-TRK"/>
                                                     <constraint firstAttribute="height" constant="57" id="qhz-PD-GbR"/>
@@ -537,7 +537,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title (76 character limit)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2M-EV-pje">
-                                                <rect key="frame" x="8" y="185" width="194" height="21"/>
+                                                <rect key="frame" x="8" y="251" width="181" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -550,10 +550,10 @@
                                             <constraint firstItem="W2M-EV-pje" firstAttribute="leading" secondItem="c0X-9l-nNj" secondAttribute="leading" constant="8" id="7HS-J4-fLz"/>
                                             <constraint firstItem="NV3-b0-Pto" firstAttribute="leading" secondItem="c0X-9l-nNj" secondAttribute="leading" constant="8" id="AOm-U8-Q0O"/>
                                             <constraint firstItem="tOW-FD-R4q" firstAttribute="leading" secondItem="c0X-9l-nNj" secondAttribute="leading" constant="8" id="CWP-1g-0ZG"/>
-                                            <constraint firstItem="Lgl-C6-8Cr" firstAttribute="bottom" secondItem="W2M-EV-pje" secondAttribute="top" constant="-8" id="NJi-6k-lzA"/>
+                                            <constraint firstItem="Lgl-C6-8Cr" firstAttribute="bottom" secondItem="W2M-EV-pje" secondAttribute="top" constant="-6" id="NJi-6k-lzA"/>
                                             <constraint firstAttribute="height" constant="1000" id="PQR-gC-81u"/>
                                             <constraint firstAttribute="trailing" secondItem="tOW-FD-R4q" secondAttribute="trailing" constant="8" id="Qp2-AL-oSD"/>
-                                            <constraint firstItem="Lgl-C6-8Cr" firstAttribute="top" secondItem="c0X-9l-nNj" secondAttribute="top" constant="8" id="S4x-Te-GPU"/>
+                                            <constraint firstItem="Lgl-C6-8Cr" firstAttribute="top" secondItem="c0X-9l-nNj" secondAttribute="top" constant="76" id="S4x-Te-GPU"/>
                                             <constraint firstItem="Eda-7X-0BF" firstAttribute="leading" secondItem="c0X-9l-nNj" secondAttribute="leading" constant="8" id="THM-0M-5ju"/>
                                             <constraint firstAttribute="centerX" secondItem="Lgl-C6-8Cr" secondAttribute="centerX" id="TOv-kl-FvL"/>
                                             <constraint firstItem="2Ep-fW-Dyg" firstAttribute="top" secondItem="tOW-FD-R4q" secondAttribute="bottom" constant="8" symbolic="YES" id="dEE-9J-H85"/>
@@ -595,7 +595,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFB-a7-aco" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="YTJ-Dx-kRz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1127" y="-2902"/>
+            <point key="canvasLocation" x="1248" y="-2942"/>
         </scene>
         <!--Explore Debates Tab Bar Controller-->
         <scene sceneID="MR0-Gi-jy3">
@@ -1547,7 +1547,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apH-Gy-LXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="YIW-W4-TST" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="225" y="-1016"/>
+            <point key="canvasLocation" x="288" y="-1110"/>
         </scene>
     </scenes>
     <resources>
