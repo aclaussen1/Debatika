@@ -400,6 +400,14 @@
             // Add a relation between the Post and Comment
             myComment[@"parent"] = _objectID;
             
+            //In parse, each debate keeps track of how many comments have been made. The following code adds 1 to that number. The number of comments is displayed on the featured debates page
+            PFQuery * query = [PFQuery queryWithClassName:@"Debate"];
+            PFObject *currentDebate = [query getObjectWithId:_objectID];
+            NSNumber *numberOfComments = self.currentDebate[@"numberOfComments"];
+            NSNumber *commentsPlusOne = @([numberOfComments intValue] + 1);
+            self.currentDebate[@"numberOfComments"] = commentsPlusOne;
+            [currentDebate saveInBackground];
+            
             // This will save both myPost and myComment
             [myComment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (succeeded) {

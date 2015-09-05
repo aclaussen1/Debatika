@@ -155,7 +155,7 @@
             NSLog(@"%@", [_categoriesToFillPickerView objectAtIndex:[self.Categories selectedRowInComponent:0]]);
             
             debateToSubmit[@"votes"] = @0.0;
-            
+            debateToSubmit[@"numberOfComments"] = @0.0;
             
             debateToSubmit[@"createdBy"] = _currentUserObjectId;
             NSLog(@"%@", _currentUserObjectId);

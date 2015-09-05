@@ -88,6 +88,14 @@
     
     cell.title.text = [tableDataMutable objectAtIndex:indexPath.row][@"Title"];
     cell.descriptionSubtitle.text = [tableDataMutable objectAtIndex:indexPath.row][@"description"];
+    //getting the number of upvotes and comments for this debate. Must be converted from an NSNumber to NSString
+    NSNumber *votesNumber = [tableDataMutable objectAtIndex:indexPath.row][@"votes"];
+    NSString *votesString = [votesNumber stringValue];
+    cell.points.text = votesString;
+    NSNumber *commentsNumber = [tableDataMutable objectAtIndex:indexPath.row][@"numberOfComments"];
+    NSString *commentsString = [commentsNumber stringValue];
+    cell.numberOfComments.text = commentsString;
+    
     
     /* There is some magic going on here that I do not quite understand. I used some code from stackoverflow. http://stackoverflow.com/questions/26920632/how-to-asynchronously-load-uitableviewcell-images-so-that-scrolling-doesnt-lag
         Without the dispatch_async, the featured debates was very laggy. I would get warnings saying that there was long running operation going on in the main thread. I think this had to do with the image of debate creators constantly coming from Parse. I need to read into this more so I'm not just a monkey who copies code. I should read about concurrency on iOS. But it whatever it is doing, it fixed the problem.
