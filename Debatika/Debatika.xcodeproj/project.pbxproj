@@ -81,6 +81,7 @@
 		B1CDDD561B33A1F200FC3442 /* iconn 40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDDD551B33A1F200FC3442 /* iconn 40pt.png */; };
 		B1CDDD581B33A2C700FC3442 /* iconn 120x120 spotlight 3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDDD571B33A2C700FC3442 /* iconn 120x120 spotlight 3x.png */; };
 		B1CDDD5A1B33A31100FC3442 /* iconn 80x80 iphone spotlight 2x 40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDDD591B33A31100FC3442 /* iconn 80x80 iphone spotlight 2x 40pt.png */; };
+		B1DC9A061B9B7307003DF9AA /* Debates1v1TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9A051B9B7307003DF9AA /* Debates1v1TabBarController.m */; };
 		B1E5527D1AFD103300C60166 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5527C1AFD103300C60166 /* FBSDKCoreKit.framework */; };
 		B1E5527F1AFD103F00C60166 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5527E1AFD103F00C60166 /* FBSDKLoginKit.framework */; };
 		B1E552811AFD105200C60166 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E552801AFD105200C60166 /* FBSDKShareKit.framework */; };
@@ -205,6 +206,8 @@
 		B1CDDD551B33A1F200FC3442 /* iconn 40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconn 40pt.png"; sourceTree = "<group>"; };
 		B1CDDD571B33A2C700FC3442 /* iconn 120x120 spotlight 3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconn 120x120 spotlight 3x.png"; sourceTree = "<group>"; };
 		B1CDDD591B33A31100FC3442 /* iconn 80x80 iphone spotlight 2x 40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconn 80x80 iphone spotlight 2x 40pt.png"; sourceTree = "<group>"; };
+		B1DC9A041B9B7307003DF9AA /* Debates1v1TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debates1v1TabBarController.h; sourceTree = "<group>"; };
+		B1DC9A051B9B7307003DF9AA /* Debates1v1TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Debates1v1TabBarController.m; sourceTree = "<group>"; };
 		B1E5527C1AFD103300C60166 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		B1E5527E1AFD103F00C60166 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B1E552801AFD105200C60166 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -434,6 +437,15 @@
 			name = "Spash Screen";
 			sourceTree = "<group>";
 		};
+		B1DC9A031B9B72B4003DF9AA /* Debates1v1 */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC9A041B9B7307003DF9AA /* Debates1v1TabBarController.h */,
+				B1DC9A051B9B7307003DF9AA /* Debates1v1TabBarController.m */,
+			);
+			name = Debates1v1;
+			sourceTree = "<group>";
+		};
 		B1E5528D1AFDD7F700C60166 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +453,7 @@
 				B1C596211B1BAB0000776A3B /* explore debates */,
 				B1C596311B1E12C400776A3B /* Section Header */,
 				B1F3E16C1B29396D007C0666 /* Profile */,
+				B1DC9A031B9B72B4003DF9AA /* Debates1v1 */,
 				B1E552841AFD521100C60166 /* MainViewController.h */,
 				B1E552851AFD521100C60166 /* MainViewController.m */,
 				B1F246381B02FAE100BF82A0 /* SettingsViewController.h */,
@@ -668,6 +681,7 @@
 				B110395B1B23E886000C83AA /* ViewDebateNavigationController.m in Sources */,
 				B1C778271B518830000C0728 /* SearchDebatesTableViewController.m in Sources */,
 				B11039551B22CD82000C83AA /* MainDebateTableViewCell.m in Sources */,
+				B1DC9A061B9B7307003DF9AA /* Debates1v1TabBarController.m in Sources */,
 				B1F245571B015BA900BF82A0 /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				B1A718031B1A368900381FA2 /* ExploreDebatesTabBarController.m in Sources */,
 				B14AA4861AF918550029FC45 /* AppDelegate.m in Sources */,
