@@ -16,7 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    
+    //UIBarButtonItem *one = [[UIBarButtonItem alloc]initWithTitle:@"One" style:UIBarButtonItemStylePlain target:self action:@selector(homeButton:)];
+    UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"HomeBarButtonItem"] style:UIBarButtonItemStylePlain target:self action:@selector(homeButton:)];
+    UIBarButtonItem *two = [[UIBarButtonItem alloc]initWithTitle:@"Two" style:UIBarButtonItemStylePlain target:self action:@selector(testMethod)];
+    UIBarButtonItem *three = [[UIBarButtonItem alloc]initWithTitle:@"Three" style:UIBarButtonItemStylePlain target:self action:@selector(testMethod)];
+    
+    // create a spacer
+    UIBarButtonItem *space = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:self action:nil];
+    space.width = 30;
+    
+    NSArray *buttons = @[one, space, two, space, three];
+    
+    self.navigationItem.rightBarButtonItems = buttons;
+}
+
+- (IBAction)homeButton:(id)sender {
+    [self performSegueWithIdentifier:@"unwindToMain" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {

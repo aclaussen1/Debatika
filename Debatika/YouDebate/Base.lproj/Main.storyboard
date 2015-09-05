@@ -1010,10 +1010,10 @@
             </objects>
             <point key="canvasLocation" x="-1137" y="208"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--NavigationCntrlTo1v1-->
         <scene sceneID="to6-Xz-vTl">
             <objects>
-                <navigationController id="d4s-RB-c5c" sceneMemberID="viewController">
+                <navigationController title="NavigationCntrlTo1v1" id="d4s-RB-c5c" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d5g-Mz-h2D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1058,10 +1058,10 @@
             </objects>
             <point key="canvasLocation" x="-2018" y="868"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Debates 1v1 Tab Bar Controller-->
         <scene sceneID="J7a-EL-hNB">
             <objects>
-                <tabBarController id="pJ3-Zj-xmx" sceneMemberID="viewController">
+                <tabBarController id="pJ3-Zj-xmx" customClass="Debates1v1TabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="DUc-zk-Hdm"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5cW-m8-cvw">
@@ -1072,11 +1072,13 @@
                     <connections>
                         <segue destination="pOp-ev-PKU" kind="relationship" relationship="viewControllers" id="UDS-Sq-CiM"/>
                         <segue destination="cv7-0u-r6Q" kind="relationship" relationship="viewControllers" id="aic-92-yHx"/>
+                        <segue destination="Wg7-0O-WZL" kind="unwind" identifier="unwindToMain" unwindAction="unwindFromAnotherViewToMain:" id="bCA-jz-b3g"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vog-jg-Tul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Wg7-0O-WZL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1413" y="1739"/>
+            <point key="canvasLocation" x="-1308" y="1689"/>
         </scene>
         <!--Item-->
         <scene sceneID="rdB-HE-mfT">
