@@ -83,6 +83,9 @@
 
 
 - (void)viewDidLoad {
+    
+
+    
     internetIssueHasHappened = false;
     [self testInternetConnectionInBackground];
     
@@ -93,7 +96,7 @@
     //if current user is nil (is a guest), then the logout button will display different text, because a guest technically isn't logged in
     if (currentUser == nil) {
         NSLog(@"in this code snippet");
-        [self.logoutButton setTitle:@"Return to Login Screen" forState:UIControlStateNormal];
+        [self.logoutButton setTitle:@"Exit" forState:UIControlStateNormal];
         
     }
     

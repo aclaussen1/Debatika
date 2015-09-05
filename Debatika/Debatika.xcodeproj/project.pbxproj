@@ -82,6 +82,7 @@
 		B1CDDD581B33A2C700FC3442 /* iconn 120x120 spotlight 3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDDD571B33A2C700FC3442 /* iconn 120x120 spotlight 3x.png */; };
 		B1CDDD5A1B33A31100FC3442 /* iconn 80x80 iphone spotlight 2x 40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CDDD591B33A31100FC3442 /* iconn 80x80 iphone spotlight 2x 40pt.png */; };
 		B1DC9A061B9B7307003DF9AA /* Debates1v1TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9A051B9B7307003DF9AA /* Debates1v1TabBarController.m */; };
+		B1DC9A091B9BA6FF003DF9AA /* Create1v1DebateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DC9A081B9BA6FF003DF9AA /* Create1v1DebateViewController.m */; };
 		B1E5527D1AFD103300C60166 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5527C1AFD103300C60166 /* FBSDKCoreKit.framework */; };
 		B1E5527F1AFD103F00C60166 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E5527E1AFD103F00C60166 /* FBSDKLoginKit.framework */; };
 		B1E552811AFD105200C60166 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E552801AFD105200C60166 /* FBSDKShareKit.framework */; };
@@ -208,6 +209,8 @@
 		B1CDDD591B33A31100FC3442 /* iconn 80x80 iphone spotlight 2x 40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconn 80x80 iphone spotlight 2x 40pt.png"; sourceTree = "<group>"; };
 		B1DC9A041B9B7307003DF9AA /* Debates1v1TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debates1v1TabBarController.h; sourceTree = "<group>"; };
 		B1DC9A051B9B7307003DF9AA /* Debates1v1TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Debates1v1TabBarController.m; sourceTree = "<group>"; };
+		B1DC9A071B9BA6FF003DF9AA /* Create1v1DebateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Create1v1DebateViewController.h; sourceTree = "<group>"; };
+		B1DC9A081B9BA6FF003DF9AA /* Create1v1DebateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Create1v1DebateViewController.m; sourceTree = "<group>"; };
 		B1E5527C1AFD103300C60166 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		B1E5527E1AFD103F00C60166 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B1E552801AFD105200C60166 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -442,6 +445,8 @@
 			children = (
 				B1DC9A041B9B7307003DF9AA /* Debates1v1TabBarController.h */,
 				B1DC9A051B9B7307003DF9AA /* Debates1v1TabBarController.m */,
+				B1DC9A071B9BA6FF003DF9AA /* Create1v1DebateViewController.h */,
+				B1DC9A081B9BA6FF003DF9AA /* Create1v1DebateViewController.m */,
 			);
 			name = Debates1v1;
 			sourceTree = "<group>";
@@ -689,6 +694,7 @@
 				B14AA4831AF918550029FC45 /* main.m in Sources */,
 				B1F246301B02909200BF82A0 /* ForgotPasswordViewController.m in Sources */,
 				B1C596241B1BAE1100776A3B /* FeaturedTableViewController.m in Sources */,
+				B1DC9A091B9BA6FF003DF9AA /* Create1v1DebateViewController.m in Sources */,
 				B1FA5F5A1B25E5AB00D67F3A /* ProfileTableViewController.m in Sources */,
 				B11039501B22C5D6000C83AA /* ViewDebateTableViewController.m in Sources */,
 				B1E552861AFD521100C60166 /* MainViewController.m in Sources */,

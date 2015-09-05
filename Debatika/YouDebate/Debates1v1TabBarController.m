@@ -36,6 +36,8 @@
     NSArray *leftButtons = @[four, space, three];
     self.navigationItem.rightBarButtonItems = rightButtons;
     self.navigationItem.leftBarButtonItems = leftButtons;
+    
+    
 }
 
 - (IBAction)homeButton:(id)sender {

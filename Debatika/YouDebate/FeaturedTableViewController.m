@@ -14,9 +14,6 @@
 @interface FeaturedTableViewController ()
 
  
- 
-
-
 @end
 
 @implementation FeaturedTableViewController
@@ -33,6 +30,7 @@
 }
 
 - (void)viewDidLoad {
+    
     
     [super viewDidLoad];
    
